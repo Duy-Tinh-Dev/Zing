@@ -200,3 +200,14 @@ header h2 {
 .play-list__option {
   padding: 10px 16px;
 }
+@media screen and (max-width: 480px) {
+  .app {
+    min-width: 100vw;
+  }
+  .dashboard__control--item {
+    padding: 16px;
+  }
+  .dashboard__control--item + .dashboard__control--item {
+    margin-left: 10px;
+  }
+}
