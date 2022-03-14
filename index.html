@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/Logo_web.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/icon/css/all.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <title>Zing-Mp3</title> 
+  </head>
+  <body>
+    <div class="app">
+     <div class="dashboard">
+        <header>
+        <h3>Now play</h3>
+        <h2></h2>
+      </header>
+      <div class="dashboard__disk">
+        <div class="dashboard__disk--playing">
+        </div>
+      </div>
+      <div class="dashboard__active">
+        <div class="dashboard__active--item btn-heart">
+        <i class="fa-regular fa-heart empty"></i>
+        <i class="fa-solid fa-heart no-empty"></i>
+        </div>
+        <div class="dashboard__active--item item--share">
+         <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="dashboard__active--item item--download">
+         <i class="fa-solid fa-download"></i>
+        </div>
+      </div>
+      <div class="dashboard__control">
+        <div class="dashboard__control--item btn-repeat">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+        <div class="dashboard__control--item btn-left">
+         <i class="fa-solid fa-circle-arrow-left"></i>
+        </div>
+        <div class="dashboard__control--item btn__toggle-play">
+         <i class="fa-solid fa-pause"></i>
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="dashboard__control--item btn-right">
+          <i class="fa-solid fa-circle-right"></i>
+        </div>
+        <div class="dashboard__control--item btn-random">
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+      </div>
+      <input type="range" name="slider" id="slider" min="0" max="100" value="0" class="slider">
+      <!-- <div class="dashboard__control--slider">
+      </div> -->
+     </div>
+     <audio  controls  id="audio"></audio>
+     <div class="play-list">
+       
+     </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
